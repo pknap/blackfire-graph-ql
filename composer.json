@@ -1,0 +1,23 @@
+{
+    "name": "dani97/blackfire-graph-ql",
+    "version": "1.0.0",
+    "description": "Magento 2 GraphQl Blackfire Profiler Helper. Note: Not meant for production",
+    "type": "magento2-module",
+    "require": {
+        "php": "~7.3.0||~7.4.0",
+        "magento/framework": "102.*",
+        "magento/module-graph-ql": "*",
+        "blackfire/php-sdk": "*"
+    },
+    "license": [
+        "Open Software License (OSL)"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Dani97\\BlackfireGraphQl\\": ""
+        }
+    }
+}
