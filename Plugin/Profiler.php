@@ -25,7 +25,8 @@ class Profiler
      */
     public function beforeDispatch(GraphQl $subject, RequestInterface $request): array
     {
-        if (!empty($request->getHeader($this->config->getHeader()))){
+        $headerName = $this->config->getHeader();
+        if (!empty($headerName) && !empty($request->getHeader($headerName))){
             $clientId = $this->config->getBlackfireClientId();
             $clientToken = $this->config->getBlackfireClientToken();
             $config = new \Blackfire\ClientConfiguration();
