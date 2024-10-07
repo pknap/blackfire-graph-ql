@@ -1,5 +1,5 @@
 {
-    "name": "dani97/blackfire-graph-ql",
+    "name": "pknap/blackfire-graph-ql",
     "version": "1.0.0",
     "description": "Magento 2 GraphQl Blackfire Profiler Helper. Note: Not meant for production",
     "type": "magento2-module",
